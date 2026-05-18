@@ -3,7 +3,7 @@ name: Preprocessing Otomatis
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   preprocessing:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Run preprocessing script
         run: |
-          python preprocessing/automate_NamaSiswa.py \
+          python preprocessing/automate_YudiPratamaPutra.py \
             --input telco_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv \
             --output preprocessing/telco_preprocessing
 
